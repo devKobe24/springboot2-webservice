@@ -1,4 +1,4 @@
-package com.kobe.springboot;
+package com.kobe.springboot.web;
 
 import com.kobe.springboot.web.HelloController;
 import org.junit.Test;
