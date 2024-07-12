@@ -1,5 +1,6 @@
 package com.kobe.springboot.domain.posts;
 
+import com.kobe.springboot.domain.BaseTimeEntity;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -20,7 +21,7 @@ import lombok.NoArgsConstructor;
 // 기본값으로 클래스의 카멜케이스 이름을 언더스코어 네이밍(_)으로 테이블 이름을 매칭합니다.
 	// ex) SalesManager -> sales_manager table
 @Entity
-public class Posts {
+public class Posts extends BaseTimeEntity {
 	// 해당 테이블의 PK 필드를 나타냅니다.
 	@Id
 
