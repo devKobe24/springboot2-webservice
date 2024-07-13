@@ -1,10 +1,11 @@
 package com.kobe.springboot.config.auth.dto;
 
 import com.kobe.springboot.domain.user.User;
+import java.io.Serializable;
 import lombok.Getter;
 
 @Getter
-public class SessionUser {
+public class SessionUser implements Serializable {
 	private String name;
 	private String email;
 	private String picture;
